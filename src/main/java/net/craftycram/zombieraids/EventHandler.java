@@ -50,7 +50,7 @@ public class EventHandler {
             }
             if (ticks > eventStartTick + 100 && spawnLightnings) {
                 // remove bed block
-                //world.func_147480_a(bedPosX, bedPosY, bedPosZ, true);
+                world.func_147480_a(bedPosX, bedPosY, bedPosZ, true);
                 Minecraft.getMinecraft().gameSettings.thirdPersonView = 0;
                 player.setPositionAndRotation(playerPosX, playerPosY, playerPosZ, player.getRotationYawHead(), 0);
                 spawnLightnings = false;
